@@ -1,0 +1,23 @@
+{
+  "name": "googlemapsdemo",
+  "version": "1.0.0",
+  "description": "Google Maps data layer geojson demo",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauldhawk/googleMapsDemo.git"
+  },
+  "author": "Paul Hawk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pauldhawk/googleMapsDemo/issues"
+  },
+  "homepage": "https://github.com/pauldhawk/googleMapsDemo#readme"
+}
