@@ -1,29 +1,23 @@
+var gulp   = require('gulp'),
+    jshint = require('gulp-jshint'),
+    browserSync = require('browser-sync')
 
-// Dependencies
-var gulp = require('gulp'),
-    nodemon = require('gulp-nodemon'),
-    notify = require('gulp-notify'),
-    livereload = require('gulp-livereload'),
-    debug = require('gulp-debug'),
-    inject = require('gulp-inject'),
-    sourcemaps = require('gulp-sourcemaps'),
-    browserSync = require('browser-sync');
-
-// Task
-gulp.task('reload', function() {
-	// listen for changes
-	livereload.listen();
-	// configure nodemon
-	nodemon({
-		// the script to run the app
-		script: 'server.js',
-		ext: 'js'
-	}).on('restart', function(){
-		// when the app has restarted, run livereload.
-		gulp.src('server.js')
-			.pipe(livereload())
-			.pipe(notify('Reloading page, please wait...'));
-	})
+// configure the jshint task
+gulp.task('jshint', function() {
+    return gulp.src('public/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('jshint-stylish'));
 });
 
-gulp.task('default', ['reload']);
+// watch files for changes and reload
+gulp.task('serve', function() {
+    browserSync({
+        server: { baseDir: './public' }
+    });
+    //gulp.task('js-watch', browserSync.reload);
+    gulp.watch(['public/*.html', 'public/*.js','public/geojson/*.json'],
+        browserSync.reload);
+});
+
+// define the default task and add the watch task to it
+gulp.task('default', ['serve']);
