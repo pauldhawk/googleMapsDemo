@@ -1,0 +1,98 @@
+{ 
+    "type": "FeatureCollection", 
+    "features": [{ 
+        "type": "Feature", 
+        "id": "1", 
+        "geometry": { 
+            "type": "Point", 
+            "coordinates": [ 
+                -87.619320, 
+                41.882280 
+            ] 
+        }, 
+        "properties": { 
+            "is_a": "drone" 
+        } 
+    }, { 
+        "type": "Feature", 
+        "id": "2", 
+        "geometry": { 
+            "type": "Point", 
+            "coordinates": [ 
+                -87.619347, 
+                41.874427 
+            ] 
+        }, 
+        "properties": { 
+            "is_a": "drone" 
+        } 
+    }, { 
+        "type": "Feature", 
+        "id": "3", 
+        "geometry": { 
+            "type": "Point", 
+            "coordinates": [ 
+                -87.619202, 
+                41.873956 
+            ] 
+        }, 
+        "properties": { 
+            "is_a": "drop_site" 
+        } 
+    }, { 
+        "type": "Feature", 
+        "id": "4", 
+        "geometry": { 
+            "type": "Point", 
+            "coordinates": [ 
+            -87.619420, 
+            41.881086 
+            ] 
+        }, 
+        "properties": { 
+            "is_a": "base_station" 
+        } 
+    }, { 
+        "type": "Feature", 
+        "id" : "5", 
+        "geometry": { 
+            "type": "LineString", 
+            "coordinates": [ 
+                [ -87.619347, 
+                41.874427 
+                ], 
+                [ -87.619202, 
+                41.873956 
+                ] 
+            ] 
+        }, 
+        "properties": { 
+            "is_a": "flight_path", 
+            "mission": "save a dude", 
+            "drone": "the big drone", 
+            "site": "the one with the f'd up dude" 
+        } 
+    }, 
+    { 
+       "type": "Feature", 
+       "id" : "6", 
+       "geometry": { 
+           "type": "LineString", 
+           "coordinates": [ 
+               [ -87.619320, 
+               41.882280 
+               ], 
+               [ -87.619420, 
+               41.881086 
+               ] 
+           ] 
+       }, 
+       "properties": { 
+           "is_a": "flight_path", 
+           "mission": "save a dude", 
+           "drone": "the big drone", 
+           "site": "the one with the f'd up dude" 
+       } 
+   } 
+ ] 
+}
