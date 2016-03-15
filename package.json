@@ -22,7 +22,6 @@
   "homepage": "https://github.com/pauldhawk/googleMapsDemo#readme",
   "dependencies": {
     "gulp": "^3.9.0",
-    "gulp-jshint": "^2.0.0",
     "browser-sync": "^2.11.1",
     "gulp-livereload": "^3.8.1",
     "pretty-error": "^2.0.0"
