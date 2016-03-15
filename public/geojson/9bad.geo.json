@@ -1,0 +1,92 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -87.619370,
+                41.882230
+            ]
+        },
+        "properties": {
+            "is_a": "drone"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -87.619274,
+                41.874191
+            ]
+        },
+        "properties": {
+            "is_a": "drone"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -87.619202,
+                41.873956
+            ]
+        },
+        "properties": {
+            "is_a": "drop_site"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+            -87.619420,
+            41.881086
+            ]
+        },
+        "properties": {
+            "is_a": "base_station"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [ -87.619274,
+                41.874191
+                ],
+                [ -87.619202,
+                41.873956
+                ]
+            ]
+        },
+        "properties": {
+            "is_a": "flight_path",
+            "mission": "save a dude",
+            "drone": "the big drone",
+            "site": "the one with the f'd up dude"
+        }
+    },
+    {
+       "type": "Feature",
+       "geometry": {
+           "type": "LineString",
+           "coordinates": [
+               [ -87.619370,
+               41.882230
+               ],
+               [ -87.619420,
+               41.881086
+               ]
+           ]
+       },
+       "properties": {
+           "is_a": "flight_path",
+           "mission": "save a dude",
+           "drone": "the big drone",
+           "site": "the one with the f'd up dude"
+       }
+   }
+ ]
+}

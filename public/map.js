@@ -8,7 +8,7 @@ function initMap() {
             lng:  -87.619701
         }
     });
-    map.data.loadGeoJson('http://127.0.0.1:3000/geo/static.geo.json');
+    map.data.loadGeoJson('http://localhost:3000/geojson/static.geo.json');
     map.data.setStyle(styleFeature);
 }
 
